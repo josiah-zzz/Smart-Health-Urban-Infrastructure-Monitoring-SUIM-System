@@ -2,7 +2,7 @@
 
 
 
-**Davidson Inventors Challenge 2025/2026 - Team JEPAS**  
+** Davidson Inventors Challenge 2025/2026 - Team JEPAS **  
 
 **City of London Academy, Southwark**
 
