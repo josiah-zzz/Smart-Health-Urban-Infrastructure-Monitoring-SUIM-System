@@ -1,3 +1,8 @@
+![Status: Active Development](https://img.shields.io/badge/Status-Active-green)
+![Deadline: Feb 27](https://img.shields.io/badge/Deadline-Feb%2027-red)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 # Smart Health Urban Infrastructure Monitoring (SUIM) System
 
 
