@@ -61,17 +61,17 @@ infrastructure.
 
 
 
-davidson-air-quality/
+Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
-├── hardware/           # ESP32 code and wiring diagrams
+├── hardware/           ***ESP32 code and wiring diagrams***
 
-├── backend/            # Raspberry Pi Flask server
+├── backend/            ***Raspberry Pi Flask server***
 
-├── frontend/           # React dashboard (separate folder)
+├── frontend/           ***React dashboard (separate folder)***
 
-├── docs/               # Assembly guides and documentation
+├── docs/               ***Assembly guides and documentation***
 
-└── data/               # Sample sensor reading
+└── data/               ***Sample sensor reading***
 
 
 
