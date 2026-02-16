@@ -9,12 +9,6 @@ CORS(app)
 
 DATA_FILE = '/home/pi/sensor_data.csv'
 
-# Initialize CSV file if it doesn't exist
-if not os.path.exists(DATA_FILE):
-    with open(DATA_FILE, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['node_id', 'temperature', 'humidity', 'pressure', 'no2', 'pm25', 'pm10', 'co', 'o3', 'nh3', 'so2', 'timestamp'])
-
 @app.route('/data', methods=['POST'])
 def receive_data():
     data = request.json
@@ -38,23 +32,30 @@ def receive_data():
 
 @app.route('/data/latest', methods=['GET'])
 def get_latest():
-    readings = []
-    if os.path.exists(DATA_FILE):
+    try:
+        readings = []
+        if not os.path.exists(DATA_FILE):
+            return jsonify(readings), 200
+        
         with open(DATA_FILE, 'r') as f:
             reader = csv.DictReader(f)
             rows = list(reader)
             
-            # Get last reading for each node
             for node_id in ['Node1', 'Node2', 'Node3']:
-                node_readings = [r for r in rows if r['node_id'] == node_id]
+                node_readings = [r for r in rows if r.get('node_id') == node_id]
                 if node_readings:
-                    readings.append(node_readings[-1])
-    
-    return jsonify(readings), 200
+                    latest = node_readings[-1]
+                    for key in latest:
+                        if latest[key] == 'None' or latest[key] == '' or latest[key] == 'null':
+                            latest[key] = None
+                    readings.append(latest)
+        return jsonify(readings), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/health', methods=['GET'])
 def health():
-    return jsonify({'status': 'healthy'}), 200
+    return jsonify({'status': 'ok', 'timestamp': datetime.now().isoformat()}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
