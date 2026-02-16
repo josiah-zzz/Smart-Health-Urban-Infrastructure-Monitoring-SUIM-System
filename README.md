@@ -1,10 +1,10 @@
-\# Smart Health-Urban Infrastructure Monitoring (SUIM) System
+\# Smart Health Urban Infrastructure Monitoring (SUIM) System
 
 
 
-\*\*Davidson Inventors Challenge 2026 - Team JEPAS\*\*  
+\*\*Davidson Inventors Challenge 2025/2026 - Team JEPAS\*\*  
 
-\*\*City of London Academy Southwark\*\*
+\*\*City of London Academy, Southwark\*\*
 
 
 
@@ -16,8 +16,11 @@
 
 
 
-Real-time IoT air quality monitoring system using distributed ESP32 sensor nodes and Raspberry Pi data hub with React dashboard visualization.
-
+SUIM: a low-cost sensor network measuring seven pollutants (NO₂, O₃, CO, SO₂, VOCs, PM2.5, PM10) 
+at 95% lower cost. Three solar-powered ESP32 nodes transmit real-time data to a Raspberry Pi 
+hub with a web dashboard. This demonstrates community-scale air quality monitoring is 
+technically and economically viable, supporting UN SDG 9 through innovation in resilient urban 
+infrastructure. 
 
 
 
