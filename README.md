@@ -2,9 +2,9 @@
 
 
 
-\*\*Davidson Inventors Challenge 2025/2026 - Team JEPAS\*\*  
+**Davidson Inventors Challenge 2025/2026 - Team JEPAS**  
 
-\*\*City of London Academy, Southwark\*\*
+**City of London Academy, Southwark**
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -25,31 +25,13 @@ infrastructure.
 
 
 
-\### Monitored Pollutants
+### Monitored Pollutants
 
-\- \*\*Environmental:\*\* Temperature, Humidity, Pressure, VOC (BME680)
+- **Environmental:** Temperature, Humidity, Pressure, VOC (BME680)
 
-\- \*\*Gases:\*\* NO₂, CO, NH₃ (MICS-6814), CO₂ (MQ-135), CO (MQ-7), O₃ (MQ-131)
+- **Gases:** NO₂, CO, NH₃ (MICS-6814), CO₂ (MQ-135), CO (MQ-7), O₃ (MQ-131)
 
-\- \*\*Particulates:\*\* PM2.5, PM10 (PMS5003)
-
-
-
----
-
-
-
-\### Components
-
-\- \*\*Hardware:\*\* ESP32 (x3), BME680, MQ-135, MQ-7, MQ-131, MICS-6814, PMS5003
-
-\- \*\*Backend:\*\* Raspberry Pi 4, Flask API, CSV data storage
-
-\- \*\*Frontend:\*\* React, TanStack Query, Tailwind CSS
-
-\- \*\*Power:\*\* Solar power banks (10,000mAh, weatherproof)
-
-\- \*\*Enclosures:\*\* IP65 waterproof junction boxes
+- **Particulates:** PM2.5, PM10 (PMS5003)
 
 
 
@@ -57,7 +39,25 @@ infrastructure.
 
 
 
-\## Repository Structure
+### Components
+
+- **Hardware:** ESP32 (x3), BME680, MQ-135, MQ-7, MQ-131, MICS-6814, PMS5003
+
+- **Backend:** Raspberry Pi 4, Flask API, CSV data storage
+
+- **Frontend:** React, TanStack Query, Tailwind CSS
+
+- **Power:** Solar power banks - 2x 38,800mAh, weatherproof (and 1x 10,000mAh powerbank as another solar power bank wouldn't arrive in time, learn more in documentation)
+
+- **Enclosures:** IP54 Weatherproof Electrical Connection boxes
+
+
+
+---
+
+
+
+## Repository Structure
 
 
 
@@ -79,59 +79,47 @@ davidson-air-quality/
 
 
 
-\## Current Status (Feb 13, 2026)
+## Current Status (Feb 13, 2026)
 
 
 
-✅ \*\*COMPLETED:\*\*
+✅ **COMPLETED:**
 
-\- Raspberry Pi hub operational (Flask server, auto-start service)
+- Raspberry Pi hub fully operational (Flask server, auto-start service)
 
-\- ESP32 Node 1 (rough prototype) assembled and transmitting data via Wi-Fi
+- ESP32 Node 1 (rough prototype using 2 sensors) assembled and transmitting data via Wi-Fi
+   - BME680 + MQ-135 sensors integrated and working
 
-\- BME680 + MQ-135 sensors integrated and working
-
-\- React dashboard displaying live data (temperature, humidity, pressure, NO₂)
-
-\- Auto-refresh functionality (60-second polling)
+- React dashboard displaying live data (temperature, humidity, pressure, CO)
 
 
 
-⏳ \*\*IN PROGRESS:\*\*
+⏳ **IN PROGRESS:**
 
-\- MQ-7, MICS-6814 sensors (arriving Feb 18?)
+- MQ-7, MICS-6814 sensors (arriving by Feb 18?)
 
-\- PMS5003 integration (awaiting breakout boards)
+- PMS5003 integration (awaiting breakout boards, may not arrive in time, nuclear option is to cut the wire to separate connections manually)
 
-\- Nodes 2 \& 3 assembly
+- Nodes 2 & 3 assembly
 
-\- Weatherproof enclosure assembly
-
-
-
-📅 \*\*UPCOMING:\*\*
-
-\- Final Assembely (Feb 13-16)
-
-\- 10-day data collection (Feb 16 - 26)
-
-\- Final report submission (Feb 27)
+- Weatherproof enclosure assembly
 
 
 
----
+📅 **UPCOMING:**
 
+- Final Assembly (13-16th February)
 
+- 10-day data collection (16 - 26 February)
 
-\## Documentation
+- Final report submission (27 February)
 
+- Final Report Feedback (13th March)
 
+- Shortlisted for final? (hopefully - 16th March)
 
-\- \[Assembly Guide](docs/ASSEMBLY.md) \*(coming soon)\*
-
-\- \[Deployment Guide](docs/DEPLOYMENT.md) \*(coming soon)\*
-
-\- \[Weatherproofing Guide](docs/WEATHERPROOFING.md) \*(coming soon)\*
+- **Davidson Inventors Challenge 2026 Final and Awards - (Thursday 26  March, God Willing🙏)**
+  
 
 
 
@@ -139,11 +127,15 @@ davidson-air-quality/
 
 
 
-\## License
+## Documentation
 
 
 
-MIT License - See \[LICENSE](LICENSE) for details.
+- [Assembly Guide](docs/ASSEMBLY.md) *(coming soon)*
+
+- [Deployment Guide](docs/DEPLOYMENT.md) *(coming soon)*
+
+- [Weatherproofing Guide](docs/WEATHERPROOFING.md) *(coming soon)*
 
 
 
@@ -151,11 +143,23 @@ MIT License - See \[LICENSE](LICENSE) for details.
 
 
 
-\## Acknowledgments
+## License
 
 
 
-\- University of Cambridge's Davidson Inventors Challenge (2025-2026)
+MIT License - See [LICENSE](LICENSE) for details.
 
-\- City of London Academy Southwark
+
+
+---
+
+
+
+## Acknowledgments
+
+
+
+- University of Cambridge's Davidson Inventors Challenge (2025-2026)
+
+- City of London Academy Southwark
 
