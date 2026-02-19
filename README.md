@@ -34,10 +34,9 @@ infrastructure.
 
 - **Environmental:** Temperature, Humidity, Pressure, VOC (BME680)
 
-- **Gases:** NO₂, CO, NH₃ (MICS-6814), CO₂ (MQ-135), CO (MQ-7), O₃ (MQ-131)
+- **Gases:** NO₂, CO, NH₃ (MICS-6814), CO (MQ-7), 
 
 - **Particulates:** PM2.5, PM10 (PMS5003)
-
 
 
 ---
@@ -46,7 +45,7 @@ infrastructure.
 
 ### Components
 
-- **Hardware:** ESP32 (x3), BME680, MQ-135, MQ-7, MQ-131, MICS-6814, PMS5003
+- **Hardware:** ESP32 (x3), BME680, MQ-7, MICS-6814, PMS5003  **(i)**  
 
 - **Backend:** Raspberry Pi 4, Flask API, CSV data storage
 
@@ -84,16 +83,16 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 
 
-## Current Status (Feb 13, 2026)
+## Current Status (Feb 19, 2026)
 
 
 
 ✅ **COMPLETED:**
 
-- Raspberry Pi hub fully operational (Flask server, auto-start service)
+- Raspberry Pi hub fully operational (Flask server, auto-start service) **(ii)**
 
 - ESP32 Node 1 (rough prototype using 2 sensors) assembled and transmitting data via Wi-Fi
-   - BME680 + MQ-135 sensors integrated and working
+   - BME680 + MQ-7 sensors integrated and working
 
 - React dashboard displaying live data (temperature, humidity, pressure, CO)
 
@@ -101,9 +100,9 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 ⏳ **IN PROGRESS:**
 
-- MQ-7, MICS-6814 sensors (arriving by Feb 18?)
+- MICS-6814 sensors (arriving by Feb 18?)
 
-- PMS5003 integration (awaiting breakout boards, may not arrive in time, nuclear option is to cut the wire to separate connections manually)
+- PMS5003 integration (breakout boards, only option is to cut the wire to separate connections manually, nothing to lose 🤷‍♂️)
 
 - Nodes 2 & 3 assembly
 
@@ -112,10 +111,6 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 
 📅 **UPCOMING:**
-
-- Final Assembly (13-16th February)
-
-- 10-day data collection (16 - 26 February)
 
 - Final report submission (27 February)
 
@@ -146,6 +141,19 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 ---
 
+## Notes
+
+**(i)** - Due to delivery delays, certain components may not arrive in time. The Davidson
+Inventors Challenge does not require us to have actually built something, only to come up
+with a concept and to report on this. Building the nodes was a fun, practical idea, as our
+school was able to fund it.
+
+**(ii)** - Currently having an issue connecting the Raspberry Pi to the school wifi but it
+works perfectly at home.
+
+
+
+---
 
 
 ## License
