@@ -1,5 +1,4 @@
-![Status: Active Development](https://img.shields.io/badge/Status-Active-green)
-![Deadline: Feb 27](https://img.shields.io/badge/Deadline-Feb%2027-red)
+![Status: On Pause](https://img.shields.io/badge/Status-Temporarily%20Paused-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
@@ -83,7 +82,7 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 
 
-## Current Status (Feb 19, 2026)
+## Current Status (March 25, 2026)
 
 
 
@@ -100,9 +99,9 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 ⏳ **IN PROGRESS:**
 
-- MICS-6814 sensors (arriving by Feb 18?)
+- MICS-6814 sensors (Arrived)
 
-- PMS5003 integration (breakout boards, only option is to cut the wire to separate connections manually, nothing to lose 🤷‍♂️)
+- PMS5003 integration (Breakout boards have now arrived)
 
 - Nodes 2 & 3 assembly
 
@@ -110,16 +109,15 @@ Smart-Health-Urban-Infrastructure-Monitoring-SUIM-System/
 
 
 
+
+
+
+
+
+
 📅 **UPCOMING:**
 
-- Final report submission (27 February)
-
-- Final Report Feedback (13th March)
-
-- Shortlisted for final? (hopefully - 16th March)
-
-- **Davidson Inventors Challenge 2026 Final and Awards - (Thursday 26  March, God Willing🙏)**
-  
+See Note **(iii)**  
 
 
 
@@ -151,6 +149,8 @@ school was able to fund it.
 **(ii)** - Currently having an issue connecting the Raspberry Pi to the school wifi but it
 works perfectly at home.
 
+**(iii)** - Unfortunately, we did not make the finals shortlist for the Davidson Inventors Challenge 2026. However, we will be continuing this project. We have spoken with our teacher and we plan to finish making the nodes and installing them around the school. The new plan for the continuation of SUIM will be discussed in a meeting soon.
+
 
 
 ---
@@ -172,7 +172,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 
 
-- University of Cambridge's Davidson Inventors Challenge (2025-2026)
+- University of Cambridge's Davidson Inventors Challenge (2025-2026) 
 
 - City of London Academy Southwark
 
